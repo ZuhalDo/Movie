@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Movie Details</h1>
+<pre th:text="${model}"></pre>
+<img th:src="${movie.poster}" alt="Movie Poster">
+<p><strong>Title:</strong> <span th:text="${movie.getTitle()}"></span></p>
+<p><strong>Year:</strong> <span th:text="${movie.year}"></span></p>
+<p><strong>Rated:</strong> <span th:text="${movie.rated}"></span></p>
+<p><strong>Released:</strong> <span th:text="${movie.released}"></span></p>
+<p><strong>Runtime:</strong> <span th:text="${movie.runtime}"></span></p>
+<p><strong>Genre:</strong> <span th:text="${movie.genre}"></span></p>
+<p><strong>Director:</strong> <span th:text="${movie.director}"></span></p>
+<p><strong>Writer:</strong> <span th:text="${movie.writer}"></span></p>
+<p><strong>Actors:</strong> <span th:text="${movie.actors}"></span></p>
+<p><strong>Plot:</strong> <span th:text="${movie.plot}"></span></p>
+<p><strong>Language:</strong> <span th:text="${movie.language}"></span></p>
+<p><strong>Country:</strong> <span th:text="${movie.country}"></span></p>
+<p><strong>Awards:</strong> <span th:text="${movie.awards}"></span></p>
+
+<p><strong>Rotten Tomatoes Rating:</strong> <span th:text="${movie.rottenTomatoesRating}"></span></p>
+</body>
+</html>
